@@ -1,0 +1,33 @@
+##########################################################
+# Aliases defined in $DEEPILY_PROJECTS_DIR/scripts/client:
+##########################################################
+alias h="history | grep -i $1"
+
+alias gs="git status"
+alias gb="git branch"
+alias gc='git commit "$1" -m "$2"'
+alias ga="git add $1"
+alias gaa="git add ."
+alias gca="git commit -am $1"
+alias gpo="git push origin $1"
+
+alias ll="ls -alh"
+alias ca="cat ~/.bash_aliases"
+alias sa="source ~/.bash_aliases"
+alias na="nano ~/.bash_aliases"
+alias nrc="nano ~/.bashrc"
+alias src="source ~/.bashrc"
+alias sdn="sudo shutdown $1 now"
+
+alias sdt="$DEEPILY_PROJECTS_DIR/scripts/server/start-docker-trax.sh $1 $2"
+alias sdm="$DEEPILY_PROJECTS_DIR/scripts/server/start-docker-mimape.sh $1 $2"
+alias sdw="$DEEPILY_PROJECTS_DIR/scripts/server/start-docker-whisper.sh $1 $2"
+alias sdtts="$DEEPILY_PROJECTS_DIR/scripts/server/start-docker-tts.sh $1"
+
+alias dbw="docker build -t whisper $DEEPILY_PROJECTS_DIR/genie-in-the-box/docker/whisper"
+
+alias cdp="cd $DEEPILY_PROJECTS_DIR"
+alias cdh="cd ~"
+
+alias spws="sudo python3 -m http.server --bind 127.0.0.1 --directory /media/sdb/include/www.deepily.ai/projects 8080"
+################################################
