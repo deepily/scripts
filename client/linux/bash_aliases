@@ -5,11 +5,12 @@ alias h="history | grep -i $1"
 
 alias gs="git status"
 alias gb="git branch"
-alias gc='git commit "$1" -m "$2"'
+alias gc='git commit "$1"'
 alias ga="git add $1"
 alias gaa="git add ."
 alias gca="git commit -am $1"
 alias gpo="git push origin $1"
+alias gpom="git push origin main"
 
 alias ll="ls -alh"
 alias ca="cat ~/.bash_aliases"
