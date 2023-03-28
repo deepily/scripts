@@ -1,3 +1,6 @@
 .DS_Store
 ._.DS_Store
 .idea/
+._*
+# Prefix above does not work WTW?!?
+# server/._start-docker-tts.sh
