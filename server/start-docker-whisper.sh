@@ -11,7 +11,7 @@ if [ $# -eq 2 ]; then
 #  set RUN_THIS=/var/genie-in-the-box/run-flask-whisper.sh
 #  set RUN_THIS=bash
 
-  docker container run -e OPENAI_API_KEY="$OPENAI_API_KEY" -e CUDA_DEVICE_ORDER=PCI_BUS_ID -e CUDA_VISIBLE_DEVICES=0,1 -e DOCKER_IMAGE_VERSION="$2" -it --volume /media/sdb/include/www.deepily.ai/projects:/var --publish 127.0.0.1:"$1":"$1"/tcp --runtime=nvidia --gpus all riqui/whisper:"$2" bash
+  docker container run -e OPENAI_API_KEY="$OPENAI_API_KEY" -e CUDA_DEVICE_ORDER=PCI_BUS_ID -e CUDA_VISIBLE_DEVICES=0,1 -e DOCKER_IMAGE_VERSION="$2" -it --volume /media/sdb/include/www.deepily.ai/projects:/var --publish 127.0.0.1:"$1":"$1"/tcp --runtime=nvidia --gpus all riqui/whisper:"$2"
 
 else
 
