@@ -7,10 +7,11 @@ alias c="clear"
 
 alias gs="git status"
 alias gb="git branch"
-alias gc='git commit "$1" -m "$2"'
+alias gc='git commit --"$1"'
 alias gaa="git add ."
 alias gca="git commit -am "$1""
 alias gpo="git push origin "$1""
+alias gpom="git push origin main"
 
 alias ca="cat ~/.bash_aliases"
 alias sa="source ~/.bash_aliases"
@@ -20,8 +21,8 @@ alias src="source ~/.bashrc"
 alias ba="cp -v ~/.bash_aliases ~/Projects/projects-sshfs/scripts/client/osx/bash_aliases"
 alias bs="cp -v ~/Projects/scripts/*.sh ~/Projects/projects-sshfs/scripts/client/osx/."
 
-alias cdh="cd ~"
-alias cdp="cd ~/Projects/projects-sshfs"
+alias cdh="cd ~; pwd"
+alias cdp="cd ~/Projects/projects-sshfs; pwd"
 alias mfs="~/Projects/scripts/mount-sshfs.sh "$DEEPILY_SERVER_IP""
 alias umfs="~/Projects/scripts/umount-sshfs.sh"
 
