@@ -1,0 +1,44 @@
+################################################
+# Aliases available:
+################################################
+alias h="history | grep -i "$1""
+alias ll="ls -alh"
+alias c="clear"
+
+alias gs="git status"
+alias gb="git branch"
+alias gc='git commit --"$1"'
+alias gaa="git add ."
+alias gca="git commit -am "$1""
+alias gpo="git push origin "$1""
+alias gpom="git push origin main"
+
+alias ca="cat ~/.bash_aliases"
+alias sa="source ~/.bash_aliases"
+alias na="nano ~/.bash_aliases"
+alias nrc="nano ~/.bashrc"
+alias src="source ~/.bashrc"
+alias ba="cp -v ~/.bash_aliases ~/Projects/projects-sshfs/scripts/client/osx/imac/bash_aliases"
+alias bs="cp -v ~/Projects/scripts/*.sh ~/Projects/projects-sshfs/scripts/client/osx/imac"
+
+alias cdh="cd ~"
+alias cdp="cd ~/Projects/projects-sshfs"
+alias mfs="~/Projects/scripts/mount-sshfs.sh "$DEEPILY_SERVER_IP""
+alias umfs="~/Projects/scripts/umount-sshfs.sh"
+
+alias sshts='ssh rruiz@"$DEEPILY_SERVER_IP"'
+alias tstt='~/Projects/scripts/setup-ssh-tunnel.sh "$DEEPILY_SERVER_IP" 7999'
+alias ttts='~/Projects/scripts/setup-ssh-tunnel.sh "$DEEPILY_SERVER_IP" 5002'
+# alias tmm='~/Projects/scripts/setup-ssh-tunnel.sh "$DEEPILY_SERVER_IP" 8000'
+alias tws='~/Projects/scripts/setup-ssh-tunnel.sh "$DEEPILY_SERVER_IP" 8080'
+alias tsts="~/Projects/scripts/setup-ssh-tunnels.sh $DEEPILY_SERVER_IP"
+
+alias rgg="~/Projects/projects-sshfs/genie-in-the-box/run-genie-gui.sh record_once_on_startup=False"
+alias rggo="~/Projects/projects-sshfs/genie-in-the-box/run-genie-gui.sh record_once_on_startup=True"
+
+alias ave="source ~/Projects/local-interpreter-python3.10/venv/bin/activate"
+alias dve="~/Projects/local-interpreter-python3.10/deactivate"
+
+alias spws="sudo python3 -m http.server --directory /Users/rruiz/projects/local-httpd/ --bind 127.0.0.1 8080"
+################################################
+# export PS1="\e[1;35m\u:imac | \e[0m\e[1;34m\w\e[0m\e[1;35m $ \e[0m"

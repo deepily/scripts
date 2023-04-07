@@ -18,13 +18,14 @@ alias sa="source ~/.bash_aliases"
 alias na="nano ~/.bash_aliases"
 alias nrc="nano ~/.bashrc"
 alias src="source ~/.bashrc"
-alias ba="cp -v ~/.bash_aliases ~/Projects/projects-sshfs/scripts/client/osx/bash_aliases"
-alias bs="cp -v ~/Projects/scripts/*.sh ~/Projects/projects-sshfs/scripts/client/osx/."
+alias ba="cp -v ~/.bash_aliases ~/Projects/projects-sshfs/scripts/client/osx/mbp/bash_aliases"
+alias bs="cp -v ~/Projects/scripts/*.sh ~/Projects/projects-sshfs/scripts/client/osx/mbp ."
 
-alias cdh="cd ~; pwd"
-alias cdp="cd ~/Projects/projects-sshfs; pwd"
+alias cdh="cd ~"
+alias cdp="cd ~/Projects/projects-sshfs"
 alias mfs="~/Projects/scripts/mount-sshfs.sh "$DEEPILY_SERVER_IP""
 alias umfs="~/Projects/scripts/umount-sshfs.sh"
+alias umfsf="diskutil unmount ~/Projects/projects-sshfs"
 
 alias sshts='ssh rruiz@"$DEEPILY_SERVER_IP"'
 alias tstt='~/Projects/scripts/setup-ssh-tunnel.sh "$DEEPILY_SERVER_IP" 7999'
@@ -38,5 +39,5 @@ alias rggo="/Volumes/projects/genie-in-the-box/run-genie-gui.sh record_once_on_s
 alias ave="source ~/Projects/local-interpreter-python3.10/venv/bin/activate"
 alias dve="~/Projects/local-interpreter-python3.10/deactivate"
 
-alias spws="sudo python3 -m http.server --directory /Users/rruiz/projects/local-httpd/ --bind 127.0.0.1 80"
+alias spws="sudo python3 -m http.server --directory /Users/rruiz/projects/local-httpd/ --bind 127.0.0.1 8080"
 ################################################

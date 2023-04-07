@@ -10,4 +10,3 @@ else
   echo "Usage: ./mount-sshfs.sh {IP}, e.g.: './mount-sshfs.sh 192.168.0.19'"
 
 fi
-

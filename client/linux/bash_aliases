@@ -13,11 +13,15 @@ alias gpo="git push origin $1"
 alias gpom="git push origin main"
 
 alias ll="ls -alh"
+
 alias ca="cat ~/.bash_aliases"
 alias sa="source ~/.bash_aliases"
 alias na="nano ~/.bash_aliases"
-alias nrc="nano ~/.bashrc"
+
+alias crc="cat ~/.bashrc"
 alias src="source ~/.bashrc"
+alias nrc="nano ~/.bashrc"
+
 alias sdn="sudo shutdown $1 now"
 
 alias sdt="$DEEPILY_PROJECTS_DIR/scripts/server/start-docker-trax.sh $1 $2"
